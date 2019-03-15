@@ -1,16 +1,16 @@
 /*! https://mths.be/he v1.1.1 by @mathias | MIT license */
-;(function(root) {
+(function(root) {
 
   // Detect free variables `exports`.
-  var freeExports = typeof exports == 'object' && exports;
+  var freeExports = typeof exports == "object" && exports;
 
   // Detect free variable `module`.
-  var freeModule = typeof module == 'object' && module &&
+  var freeModule = typeof module == "object" && module &&
     module.exports == freeExports && module;
 
   // Detect free variable `global`, from Node.js or Browserified code,
   // and use it as `root`.
-  var freeGlobal = typeof global == 'object' && global;
+  var freeGlobal = typeof global == "object && global;
   if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
     root = freeGlobal;
   }
@@ -165,9 +165,9 @@
       // is within the ASCII range.
       if (useNamedReferences) {
         string = string
-          .replace(/&gt;\u20D2/g, '&nvgt;')
-          .replace(/&lt;\u20D2/g, '&nvlt;')
-          .replace(/&#x66;&#x6A;/g, '&fjlig;');
+          .replace(/&gt;\u20D2/g, "&nvgt;")
+          .replace(/&lt;\u20D2/g, "&nvlt;")
+          .replace(/&#x66;&#x6A;/g, "&fjlig;");
       }
       // Encode non-ASCII symbols.
       if (useNamedReferences) {
