@@ -621,12 +621,15 @@ img {
 }
 [data-overlay="8"]:before {
   background-image: url(../img/notebook.jpg);
+
   opacity: 0.8;
 }
 [data-overlay="9"]:before {
   opacity: 0.9;
 }
 [data-overlay="10"]:before {
+  background-image: url(../img/material-oab.png);
+  background-repeat: no-repeat;
   opacity: 1;
 }
 [data-overlay="0"]:before {
